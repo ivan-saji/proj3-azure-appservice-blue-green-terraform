@@ -5,7 +5,24 @@
 This project demonstrates how to provision and deploy an Azure App Service using **Terraform** while implementing modern **Blue-Green Deployment** practices with **GitHub Actions**.
 
 The objective of this project was to learn how Azure App Service works in a real-world deployment scenario by provisioning the infrastructure as code, integrating CI/CD, creating deployment slots, testing traffic routing, and performing zero-downtime deployments.
+---
 
+## 📌 Project Status
+
+| Feature | Status |
+|---------|--------|
+| Terraform Infrastructure | ✅ Completed |
+| Azure App Service | ✅ Completed |
+| GitHub Actions CI/CD | ✅ Completed |
+| Deployment Slots | ✅ Completed |
+| Blue-Green Deployment | ✅ Completed |
+| Canary Deployment | ✅ Completed |
+| Slot Swap | ✅ Completed |
+| Rollback | ✅ Completed |
+| Health Checks | ⏳ Planned |
+| Autoscaling | ⏳ Planned |
+| Application Insights | ⏳ Planned |
+| Managed Identity | ⏳ Planned |
 ---
 
 # 🛠 Technologies Used

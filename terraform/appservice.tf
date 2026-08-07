@@ -20,6 +20,9 @@ resource "azurerm_linux_web_app" "appservice_lab" {
   site_config {
     always_on = true
 
+    #Setting the health check path to "/health" to monitor the health of the application. This is important for ensuring that the application is running correctly and can help with automatic recovery in case of failures.
+    health_check_path = "/health"
+
     application_stack {
       node_version = "24-lts"
     }
