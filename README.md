@@ -19,7 +19,7 @@ The objective of this project was to learn how Azure App Service works in a real
 | Canary Deployment | ✅ Completed |
 | Slot Swap | ✅ Completed |
 | Rollback | ✅ Completed |
-| Health Checks | ⏳ Planned |
+| Health Checks | ✅ Completed|
 | Autoscaling | ⏳ Planned |
 | Application Insights | ⏳ Planned |
 | Managed Identity | ⏳ Planned |
