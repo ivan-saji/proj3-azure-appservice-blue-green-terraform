@@ -8,6 +8,7 @@ resource "azurerm_linux_web_app_slot" "staging_slot" {
     #setting always on to false as it is non-prod and we want to save cost. In production slot, we will set it to true.
     always_on = false
     health_check_path = "/health"
+    health_check_eviction_time_in_min = 5
 
     application_stack {
       node_version = "24-lts"
