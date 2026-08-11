@@ -20,7 +20,7 @@ The objective of this project was to learn how Azure App Service works in a real
 | Slot Swap | ✅ Completed |
 | Rollback | ✅ Completed |
 | Health Checks | ✅ Completed|
-| Autoscaling | ⏳ Planned |
+| Autoscaling | ⏳ In Progress |
 | Application Insights | ⏳ Planned |
 | Managed Identity | ⏳ Planned |
 ---

@@ -21,10 +21,4 @@ resource "azurerm_linux_web_app" "appservice_lab" {
 }
 
 #Create deployment for Production
-
-resource "azurerm_app_service_source_control" "production_source_control" {
-  app_id                = azurerm_linux_web_app.appservice_lab.id
-  branch                = "main"
-  repo_url              = "https://github.com/ivan-saji/nodejs-docs-hello-world.git"
-
-}
+#Deployment is handled through GitHub Actions instead of using azurerm_app_service_source_control resource, as it does not support configuring source control directly for slots.
