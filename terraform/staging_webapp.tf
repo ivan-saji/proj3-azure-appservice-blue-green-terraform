@@ -4,6 +4,10 @@ resource "azurerm_linux_web_app_slot" "staging_slot" {
   name           = "staging"
   app_service_id = azurerm_linux_web_app.appservice_lab.id
 
+  app_settings = {
+    SCM_DO_BUILD_DURING_DEPLOYMENT = "true"
+  }
+
   site_config {
     #setting always on to false as it is non-prod and we want to save cost. In production slot, we will set it to true.
     always_on                         = false

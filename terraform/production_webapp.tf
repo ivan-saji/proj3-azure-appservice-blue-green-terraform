@@ -7,6 +7,11 @@ resource "azurerm_linux_web_app" "appservice_lab" {
   service_plan_id     = azurerm_service_plan.asp_appservice_lab.id
   https_only          = true
 
+  # This performs the build first then deploys the application to the web app. This is important for ensuring that the application is built correctly and can be deployed without errors.
+  
+  app_settings = {
+    SCM_DO_BUILD_DURING_DEPLOYMENT = "true"
+  }
   site_config {
     always_on = true
 
