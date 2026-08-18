@@ -1,7 +1,7 @@
 #Create a slot for staging environment
 
 resource "azurerm_linux_web_app_slot" "staging_slot" {
-  name                = "ivan-appservice-lab-staging"
+  name                = "staging"
   app_service_id     = azurerm_linux_web_app.appservice_lab.id
 
   site_config {
